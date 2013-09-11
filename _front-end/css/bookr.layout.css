@@ -1,0 +1,14 @@
+article {
+  margin: 0;
+  padding: 15% 0;
+}
+article.single {
+  min-height: 1317px;
+}
+
+.margin-top {
+  margin-top: 3%;
+}
+.margin-top-double {
+  margin-top: 6%;
+}
