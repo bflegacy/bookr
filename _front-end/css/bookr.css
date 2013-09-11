@@ -1,0 +1,15 @@
+.text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text.rokkitt {
+  font-family: 'Rokkitt', serif;
+}
+
+.text.uppercase {
+  text-transform: uppercase;
+}
+
+.text.centered {
+  text-align: center;
+}
