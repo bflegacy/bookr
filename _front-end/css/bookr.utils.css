@@ -1,0 +1,21 @@
+::selection {
+  background: #C7B299;
+}
+::-moz-selection {
+  background: #C7B299;
+}
+
+.chromeframe {
+  position: fixed;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  z-index: 999;
+  display: block;
+  width: 100%;
+  background: #FCD5BA;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  border: 3px solid #EA525E;
+}

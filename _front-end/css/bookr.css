@@ -1,15 +1,9 @@
-.text {
-  font-family: 'Montserrat', sans-serif;
-}
+@import 'normalize.css';
 
-.text.rokkitt {
-  font-family: 'Rokkitt', serif;
-}
+@import 'foundation.tweaks.css';
+@import 'foundation.css';
 
-.text.uppercase {
-  text-transform: uppercase;
-}
-
-.text.centered {
-  text-align: center;
-}
+@import 'bookr.layout.css';
+@import 'bookr.utils.css';
+@import 'bookr.typography.css';
+@import 'bookr.custom.css';
