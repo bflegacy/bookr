@@ -1,3 +1,27 @@
+/* INDEX - to be removed */
+#staticPageList li::before {
+  content: "♡";
+  position: relative;
+  left: -0.7rem;
+  top: 1px;
+  font-size: 1.2rem;
+  -webkit-transition: text-shadow 175ms ease-in;
+}
+#staticPageList li:hover::before {
+  text-shadow: 0 0px 3px #333333;
+}
+#staticPageList li.done::before {
+  color: LimeGreen;
+}
+#staticPageList li.in-progress::before {
+  color: Gold;
+}
+#staticPageList li.missing::before {
+  color: LightCoral;
+}
+/* end INDEX */
+
+
 /* LANDING */
 #landing {
   padding: 3% 0;
@@ -13,6 +37,7 @@
 }
 #landing > h1 {
   font-size: 5rem; /*80px*/
+  line-height: 1.2;
 }
 #landing > h2 {
   font-size: 2.5rem; /*40px*/

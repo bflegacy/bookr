@@ -12,3 +12,8 @@ article.single {
 .margin-top-double {
   margin-top: 6%;
 }
+
+.centered {
+  margin: inherit auto;
+  /*width: 100%;*/
+}

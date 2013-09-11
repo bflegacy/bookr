@@ -1,6 +1,9 @@
 .text {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .text.rokkitt {
@@ -14,6 +17,17 @@
 /* TEXT COLORS */
 .text.white {
   color: white;
+}
+.text.gray {
+  color: #808080;
+}
+.text.link {
+  color: #3FA9F5;
+  -webkit-transition: color 175ms linear;
+}
+.text.link:hover,
+.text.link:focus {
+  color: #275F82;
 }
 /* end TEXT COLORS */
 

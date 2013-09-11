@@ -19,3 +19,14 @@
   left: 0;
   border: 3px solid #EA525E;
 }
+
+.arrow-after:after {
+  content: " ▸";
+}
+.droid .arrow-after:after {
+  content: " »";
+}
+
+li {
+  margin-left: 1.25rem; /*20px*/
+}
