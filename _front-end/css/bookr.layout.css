@@ -25,6 +25,5 @@ article.single {
 }
 
 .centered {
-  margin: inherit auto;
-  /*width: 100%;*/
+  text-align: center;
 }

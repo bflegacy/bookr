@@ -11,6 +11,9 @@
 }
 
 /* TEXT SIZES */
+  .text.twelve {
+    font-size: 0.75rem;
+  }
 /* end TEXT SIZES */
 
 
@@ -35,8 +38,5 @@
 /* TEXT UTILS */
 .text.uppercase {
   text-transform: uppercase;
-}
-.text.centered {
-  text-align: center;
 }
 /* end TEXT UTILS */
