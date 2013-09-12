@@ -1,8 +1,8 @@
 ::selection {
-  background: #C7B299;
+  background: rgba(63, 169, 245, 0.2);
 }
 ::-moz-selection {
-  background: #C7B299;
+  background: rgba(63, 169, 245, 0.2);
 }
 
 .chromeframe {
