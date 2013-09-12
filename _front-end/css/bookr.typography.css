@@ -4,6 +4,7 @@
   color: #333333;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .text.rokkitt {
@@ -11,9 +12,12 @@
 }
 
 /* TEXT SIZES */
-  .text.twelve {
-    font-size: 0.75rem;
-  }
+.text.twelve {
+  font-size: 0.75rem;
+}
+.text.twentyfour {
+  font-size: 1.5rem;
+}
 /* end TEXT SIZES */
 
 

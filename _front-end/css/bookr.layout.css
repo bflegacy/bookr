@@ -27,3 +27,11 @@ article.single {
 .centered {
   text-align: center;
 }
+
+
+
+@media only screen and (min-width: 1280px) {
+  article {
+    padding: 10% 0;
+  }
+}
