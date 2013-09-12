@@ -22,22 +22,11 @@
 }
 /* end INDEX */
 
-html {
-  background: url('../img/bg_tile.png');
-  background-repeat: repeat;
-}
-
-body {
-  background: none;
-}
-
 
 /* LANDING */
 #landing {
   padding: 3% 0;
 
-  width: 100%;
-  height: 100%;
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;

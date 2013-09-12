@@ -1,9 +1,20 @@
+html {
+  background: url('../img/bg_tile.png');
+  background-repeat: repeat;
+}
+body {
+  background: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 article {
   margin: 0;
   padding: 15% 0;
 }
 article.single {
-  min-height: 1317px;
+  min-height: 100%;
 }
 
 .margin-top {
