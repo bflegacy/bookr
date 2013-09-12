@@ -59,6 +59,30 @@
 /* end BUTTONS */
 
 
+/* FORMS */
+.bookr input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem; /* 14px */
+  color: #B3B3B3;
+  border-radius: 3px;
+  border: 1px solid rgba(179, 179, 179, 0.7);
+  padding: 0.7rem 1rem;
+  height: auto;
+  box-shadow: none;
+  margin: 0 0 0.6rem;
+}
+.bookr fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.bookr fieldset > legend {
+  background: none;
+  margin-bottom: 0.8rem;
+}
+/* end FORMS */
+
+
 /* LANDING */
 #landing {
   padding: 3% 0;
