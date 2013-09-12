@@ -6,16 +6,16 @@
   left: -0.7rem;
   top: 2px;
   font-size: 1.5rem;
-  -webkit-transition: all 175ms ease-in;
+  -webkit-transition: all 150ms ease-in;
 }
 #staticPageList li:hover::before {
   content: "♥";
 }
 #staticPageList li.done::before {
-  color: LimeGreen;
+  color: YellowGreen;
 }
 #staticPageList li.in-progress::before {
-  color: Gold;
+  color: #E6C200;
 }
 #staticPageList li.missing::before {
   color: LightCoral;
