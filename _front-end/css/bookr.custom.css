@@ -1,14 +1,15 @@
 /* INDEX - to be removed */
 #staticPageList li::before {
   content: "♡";
+  font-family: sans-serif;
   position: relative;
   left: -0.7rem;
-  top: 1px;
-  font-size: 1.2rem;
-  -webkit-transition: text-shadow 175ms ease-in;
+  top: 2px;
+  font-size: 1.5rem;
+  -webkit-transition: all 175ms ease-in;
 }
 #staticPageList li:hover::before {
-  text-shadow: 0 0px 3px #333333;
+  content: "♥";
 }
 #staticPageList li.done::before {
   color: LimeGreen;
@@ -20,6 +21,15 @@
   color: LightCoral;
 }
 /* end INDEX */
+
+html {
+  background: url('../img/bg_tile.png');
+  background-repeat: repeat;
+}
+
+body {
+  background: none;
+}
 
 
 /* LANDING */
