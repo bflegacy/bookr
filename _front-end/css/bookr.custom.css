@@ -192,6 +192,27 @@
   box-shadow: 0 0 3px 0 rgba(128, 128, 128, 0.8);
   font-weight: 400;
 }
+
+.bookr .accordion p[data-section-title] > a {
+  padding: 0.7rem 1rem;
+}
+.bookr .accordion div[data-section-content] {
+  padding: 1.5rem 1rem;
+}
+.bookr .accordion input[type="checkbox"] {
+  display: none;
+}
+.bookr .accordion label {
+  font-family: 'Montserrat', sans-serif;
+  color: #808080;
+  font-size: 0.875rem; /*14px*/
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+}
+.bookr form.custom .custom.checkbox.checked:before {
+  margin-top: 7px;
+  color: #808080;
+}
 /* end FORMS */
 
 

@@ -31,10 +31,103 @@
     <article id="signUp" class="single">
       <div class="row">
         <div class="columns small-centered large-5 small-10">
-          <form action="">
+          <form action="" class="custom">
             <fieldset>
               <legend class="text">Create a room type</legend>
-
+              <div class="row">
+                <div class="columns">
+                  <input type="text" placeholder="Room type name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <textarea placeholder="Room type description" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row margin-top">
+                <div class="columns with-help-icon">
+                  <input type="text" placeholder="Base price">
+                  <span data-tooltip class="has-tip tip-right help-icon" title="This price typically is associated with weekdays, Monday through Thursday">?</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns with-help-icon">
+                  <input type="text" placeholder="Weekend price">
+                  <span data-tooltip class="has-tip tip-right help-icon" title="This price typically includes nights, Friday through Sunday">?</span>
+                </div>
+              </div>
+              <div class="row margin-top-double">
+                <div class="columns">
+                  <span class="text fourteen">Add amenities</span>
+                </div>
+              </div>
+              <div class="row margin-top">
+                <div class="columns">
+                  <div class="section-container accordion" data-section="accordion">
+                    <section>
+                      <p class="title" data-section-title>
+                        <a href="" class="text">Bed size</a>
+                      </p>
+                      <div class="content" data-section-content>
+                        <label for="checkbox1"><input type="checkbox" id="checkbox1"><span class="custom checkbox"></span>&nbsp;&nbsp;Option one</label>
+                        <label for="checkbox2"><input type="checkbox" id="checkbox2"><span class="custom checkbox"></span>&nbsp;&nbsp;Option two</label>
+                        <label for="checkbox3"><input type="checkbox" id="checkbox3"><span class="custom checkbox"></span>&nbsp;&nbsp;Option three</label>
+                      </div>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title>
+                        <a href="" class="text">Amenities group</a>
+                      </p>
+                      <div class="content" data-section-content>
+                        <label for="checkbox1"><input type="checkbox" id="checkbox1"><span class="custom checkbox"></span>&nbsp;&nbsp;Option one</label>
+                        <label for="checkbox2"><input type="checkbox" id="checkbox2"><span class="custom checkbox"></span>&nbsp;&nbsp;Option two</label>
+                        <label for="checkbox3"><input type="checkbox" id="checkbox3"><span class="custom checkbox"></span>&nbsp;&nbsp;Option three</label>
+                      </div>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title>
+                        <a href="" class="text">Amenities group</a>
+                      </p>
+                      <div class="content" data-section-content>
+                        <label for="checkbox1"><input type="checkbox" id="checkbox1"><span class="custom checkbox"></span>&nbsp;&nbsp;Option one</label>
+                        <label for="checkbox2"><input type="checkbox" id="checkbox2"><span class="custom checkbox"></span>&nbsp;&nbsp;Option two</label>
+                        <label for="checkbox3"><input type="checkbox" id="checkbox3"><span class="custom checkbox"></span>&nbsp;&nbsp;Option three</label>
+                      </div>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title>
+                        <a href="" class="text">Amenities group</a>
+                      </p>
+                      <div class="content" data-section-content>
+                        <label for="checkbox1"><input type="checkbox" id="checkbox1"><span class="custom checkbox"></span>&nbsp;&nbsp;Option one</label>
+                        <label for="checkbox2"><input type="checkbox" id="checkbox2"><span class="custom checkbox"></span>&nbsp;&nbsp;Option two</label>
+                        <label for="checkbox3"><input type="checkbox" id="checkbox3"><span class="custom checkbox"></span>&nbsp;&nbsp;Option three</label>
+                      </div>
+                    </section>
+                    <section>
+                      <p class="title" data-section-title>
+                        <a href="" class="text">Amenities group</a>
+                      </p>
+                      <div class="content" data-section-content>
+                        <label for="checkbox1"><input type="checkbox" id="checkbox1"><span class="custom checkbox"></span>&nbsp;&nbsp;Option one</label>
+                        <label for="checkbox2"><input type="checkbox" id="checkbox2"><span class="custom checkbox"></span>&nbsp;&nbsp;Option two</label>
+                        <label for="checkbox3"><input type="checkbox" id="checkbox3"><span class="custom checkbox"></span>&nbsp;&nbsp;Option three</label>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="row margin-top-less">
+                <div class="columns">
+                  <input data-tooltip class="has-tip tip-right" type="file" title="Drag or upload photos here" accept="image/*">
+                </div>
+              </div>
+              <div class="row margin-top">
+                <div class="columns">
+                  <a href="property_details.html" class="button right">Done</a>
+                  <a href="properties.html" class="text form-link right">Cancel</a>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>
@@ -64,12 +157,12 @@
     <!-- <script src="js/foundation/foundation.clearing.js"></script> -->
     <!-- <script src="js/foundation/foundation.cookie.js"></script> -->
     <!-- <script src="js/foundation/foundation.dropdown.js"></script> -->
-    <!-- <script src="js/foundation/foundation.forms.js"></script> -->
+    <script src="js/foundation/foundation.forms.js"></script>
     <!-- <script src="js/foundation/foundation.joyride.js"></script> -->
     <!-- <script src="js/foundation/foundation.magellan.js"></script> -->
     <!-- <script src="js/foundation/foundation.orbit.js"></script> -->
     <!-- <script src="js/foundation/foundation.reveal.js"></script> -->
-    <!-- <script src="js/foundation/foundation.section.js"></script> -->
+    <script src="js/foundation/foundation.section.js"></script>
     <script src="js/foundation/foundation.tooltips.js"></script>
     <!-- <script src="js/foundation/foundation.topbar.js"></script> -->
     <!-- <script src="js/foundation/foundation.interchange.js"></script> -->
