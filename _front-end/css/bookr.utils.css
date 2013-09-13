@@ -26,7 +26,3 @@
 .droid .arrow-after:after {
   content: " »";
 }
-
-li {
-  margin-left: 1rem; /*16px*/
-}

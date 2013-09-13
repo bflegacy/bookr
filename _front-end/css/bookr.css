@@ -3,7 +3,7 @@
 @import 'foundation.tweaks.css';
 @import 'foundation.css';
 
+@import 'bookr.layout.css';
 @import 'bookr.utils.css';
 @import 'bookr.typography.css';
-@import 'bookr.layout.css';
 @import 'bookr.custom.css';

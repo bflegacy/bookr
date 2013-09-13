@@ -17,15 +17,29 @@ article.single {
   min-height: 100%;
 }
 
-.margin-top {
+.bookr .margin-top-less {
+  margin-top: 1.5%;
+}
+.bookr .margin-top {
   margin-top: 3%;
 }
-.margin-top-double {
+.bookr .margin-top-double {
   margin-top: 6%;
 }
 
 .centered {
   text-align: center;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
 }
 
 
