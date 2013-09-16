@@ -279,3 +279,18 @@
 }
 /* end PROPERTY DETAILS */
 
+
+/* ROOM TYPE DETAILS */
+.room-list > li {
+  overflow: hidden;
+  height: 2rem;
+  padding: 0 1rem;
+}
+.room-list .text {
+  line-height: 2rem;
+  vertical-align: middle;
+}
+.room-list > li:nth-child(2n+1) {
+  background: #F2F2F2;
+}
+/* end ROOM TYPE DETAILS */
