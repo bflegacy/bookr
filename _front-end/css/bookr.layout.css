@@ -11,7 +11,7 @@ body {
 
 article {
   margin: 0;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 article.single {
   min-height: 100%;
@@ -46,6 +46,6 @@ article.single {
 
 @media only screen and (min-width: 1280px) {
   article {
-    padding: 10% 0;
+    padding: 5% 0;
   }
 }
