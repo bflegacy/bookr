@@ -175,6 +175,10 @@
 .form-link:focus {
   color: #333333;
 }
+.form-link.alone {
+  margin-right: 0;
+  padding-top: 0;
+}
 
 .bookr .tooltip {
   background: white;

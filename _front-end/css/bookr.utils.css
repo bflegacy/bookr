@@ -23,6 +23,15 @@
 .arrow-after:after {
   content: " ▸";
 }
+.arrow-before:before {
+  content: "◀  ";
+  font-size: 80%;
+  position: relative;
+  top: -1px;
+}
 .droid .arrow-after:after {
   content: " »";
+}
+.droid .arrow-before:before {
+  content: "« ";
 }
