@@ -301,7 +301,7 @@
 /* end ROOM TYPE DETAILS */
 
 
-/* RESERVATIONS SEARCH */
+/* RESERVATIONS - SEARCH */
 .search-form .content-panel {
   padding: 1.5rem 0.5rem 1.5rem;
 }
@@ -324,5 +324,23 @@
 .custom.search-form input {
   padding: 0.47rem 0.75rem;
 }
-/* end RESERVATIONS SEARCH */
+/* end RESERVATIONS - SEARCH */
 
+
+/* RESERVATIONS - NEW ORDER */
+.bookr tr.border-top {
+  border: solid #DDDDDD;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.25em 0 1.1875em;
+  height: 0;
+}
+table {
+  border: none;
+}
+table tr.even,
+table tr.alt,
+table tr:nth-of-type(even) {
+  background: white;
+}
+/* end RESERVATIONS - NEW ORDER */

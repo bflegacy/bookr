@@ -48,6 +48,9 @@
 .text.uppercase {
   text-transform: uppercase;
 }
+.text.right-aligned {
+  text-align: right;
+}
 /* end TEXT UTILS */
 
 
