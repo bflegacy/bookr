@@ -344,3 +344,14 @@ table tr:nth-of-type(even) {
   background: white;
 }
 /* end RESERVATIONS - NEW ORDER */
+
+
+/* RESERVATIONS - CHECK OUT */
+#reservationsCheckOut input {
+  background: #F7F5F2;
+}
+#reservationsCheckOut input:focus {
+  background: rgba(247, 245, 242, 0.4);
+}
+/* end RESERVATIONS - CHECK OUT */
+

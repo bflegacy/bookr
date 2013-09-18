@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BOOKR - Reservations - Guest Information</title>
+    <title>BOOKR - Reservations - Check Out</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
       </nav>
     </div>
 
-    <article id="occupancy" class="single">
+    <article id="reservationsCheckOut" class="single">
       <div class="row">
         <div class="columns large-2 no-padding-left">
           <ul class="side-nav">
@@ -47,14 +47,78 @@
           </ul>
         </div>
         <div class="columns large-10 no-padding-right">
-          <div class="row content-panel">
-            <p class="text">Check Out</p>
-
-          </div>
-          <div class="row margin-top">
-            <a href="reservations_order_summary.html" class="button right">Next</a>
-            <a href="reservations_new_order.html" class="text form-link right arrow-before">Back to New Order</a>
-          </div>
+          <form action="">
+            <div class="row content-panel">
+              <p class="text">Check out</p>
+              <div class="columns large-6 small-centered">
+                <fieldset class="margin-top-double">
+                  <legend class="text">Guest information</legend>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Phone Number">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="email" placeholder="Email">
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="margin-top-double">
+                  <legend class="text">Payment information</legend>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Name on card">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Credit card number">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Street address">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="Street address 2">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="City">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="State">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="columns">
+                      <input type="text" placeholder="ZIP">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row margin-top">
+              <a href="reservations_order_summary.html" class="button right">Next</a>
+              <a href="reservations_new_order.html" class="text form-link right arrow-before">Back to New Order</a>
+            </div>
+          </form>
         </div>
       </div>
     </article>
