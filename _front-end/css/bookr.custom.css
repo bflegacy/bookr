@@ -29,10 +29,18 @@
 /* NAVIGATION */
 .bookr .top-bar {
   margin-bottom: 0;
+  height: 3.125rem; /*50px*/
+}
+.bookr .top-bar .name {
+  height: 3.125rem; /*50px*/
 }
 .logo {
-  line-height: 2.8125rem; /*45px*/
+  line-height: 3.125rem; /*50px*/
   vertical-align: middle;
+  padding-left: 0.9375rem; /*15px*/
+}
+.centered .logo {
+  padding: 0;
 }
 
 .bookr .side-nav {
@@ -366,3 +374,10 @@ table tr:nth-of-type(even) {
 }
 /* end RESERVATIONS - ORDER CONFIRMATION */
 
+
+
+@media only screen and (min-width: 1280px) {
+  .logo {
+    padding-left: 0;
+  }
+}
