@@ -30,7 +30,7 @@
 
     <article id="guestsSearch" class="single">
       <div class="row">
-        <div class="columns large-2 no-padding-left">
+        <div class="columns large-2 navigation">
           <ul class="side-nav">
             <li>
               <a href="properties.html">Properties</a>
@@ -46,17 +46,33 @@
             </li>
           </ul>
         </div>
-        <div class="columns large-10 no-padding-right content-panel">
-          <div class="row margin-top-less">
-            <div class="columns">
+        <form action="" class="custom search-form">
+          <div class="columns large-10 content">
+            <div class="content-panel">
               <div class="row">
-                <div class="columns">
-                  <p class="text">Guests search comes here</p>
+                <div class="large-3 columns">
+                  <label class="text uppercase gray twelve" for="lastName">Last Name</label>
+                  <input type="text" id="lastName">
+                </div>
+                <div class="large-3 columns">
+                  <label class="text uppercase gray twelve" for="confNumber">Confirmation #</label>
+                  <input type="text" id="confNumber">
+                </div>
+                <div class="large-3 columns">
+                  <label class="text uppercase gray twelve" for="cardNumber">Card Number</label>
+                  <input type="text" id="cardNumber">
+                </div>
+                <div class="large-3 columns">
+                  <label class="text uppercase gray twelve" for="email">Email</label>
+                  <input type="text" id="email">
                 </div>
               </div>
             </div>
+            <div class="margin-top">
+              <a href="guests_search_results.html" class="button right">Search</a>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </article>
 
