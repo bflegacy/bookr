@@ -355,3 +355,14 @@ table tr:nth-of-type(even) {
 }
 /* end RESERVATIONS - CHECK OUT */
 
+
+/* RESERVATIONS - ORDER CONFIRMATION */
+.message-bar {
+  background: rgba(57, 181, 74, 0.5);
+  padding: 0.5rem 1.5rem;
+}
+.message-bar.failure {
+  background: rgba(237, 28, 36, 0.5);
+}
+/* end RESERVATIONS - ORDER CONFIRMATION */
+
