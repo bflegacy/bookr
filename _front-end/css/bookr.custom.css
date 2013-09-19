@@ -1,27 +1,37 @@
 /* INDEX - to be removed */
-#staticPageList li {
-  margin-left: 1rem; /*16px*/
+@-webkit-keyframes beat {
+  to { -webkit-transform: scale(1.4); }
 }
-#staticPageList li::before {
-  content: "♡";
-  font-family: sans-serif;
+#staticPageList li span {
+  margin: 0 1rem 0 0.2rem;
+  zoom: 130%;
   position: relative;
-  left: -0.7rem;
-  top: 2px;
-  font-size: 1.5rem;
-  -webkit-transition: all 150ms ease-in;
+  top: 1px;
+  display: inline-block;
 }
-#staticPageList li:hover::before {
-  content: "♥";
-}
-#staticPageList li.done::before {
+#staticPageList li.done span {
   color: YellowGreen;
 }
-#staticPageList li.in-progress::before {
+#staticPageList li.in-progress span {
   color: #E6C200;
 }
-#staticPageList li.missing::before {
+#staticPageList li.missing span {
   color: LightCoral;
+}
+#staticPageList a:hover > span {
+  -webkit-animation-name: beat;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-transform-origin: center;
+}
+#staticPageList .done > a:hover > span {
+  -webkit-animation-duration: 0.2s;
+}
+#staticPageList .in-progress > a:hover > span {
+  -webkit-animation-duration: 0.5s;
+}
+#staticPageList .missing > a:hover > span {
+  -webkit-animation-duration: 1s;
 }
 /* end INDEX */
 
