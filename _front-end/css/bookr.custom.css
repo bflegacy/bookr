@@ -73,6 +73,7 @@
 .content-panel {
   background: white;
   padding: 1.3rem 1.5rem 2rem;
+  overflow: hidden;
 }
 .content-panel a {
   display: block;
@@ -311,7 +312,8 @@
 
 /* RESERVATIONS - SEARCH */
 .search-form .content-panel {
-  padding: 1.5rem 0.5rem 1.5rem;
+  padding: 1.5rem 1rem 1.5rem;
+  overflow: visible;
 }
 .custom.search-form input,
 .custom.search-form .custom.dropdown .current,
