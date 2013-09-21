@@ -26,6 +26,9 @@ article.single {
 .bookr .margin-top-double {
   margin-top: 6%;
 }
+.bookr .margin-right {
+  margin-right: 1rem;
+}
 
 .centered {
   text-align: center;

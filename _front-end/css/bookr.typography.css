@@ -33,6 +33,9 @@
 .text.gray {
   color: #808080;
 }
+.text.blue {
+  color: #3FA9F5;
+}
 .text.link {
   color: #3FA9F5;
   -webkit-transition: color 175ms linear;
