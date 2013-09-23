@@ -334,6 +334,9 @@
   color: #808080;
   padding: 0.625rem 0.75rem;
   margin: 0;
+}
+.custom.search-form .custom.dropdown .current,
+.custom.search-form .custom.dropdown ul li {
   line-height: 1;
 }
 .custom.search-form input,
@@ -388,6 +391,21 @@ table tr:nth-of-type(even) {
 
 
 
+@media only screen and (min-width: 768px) {
+  .search-form .content-panel .columns > .columns {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .search-form .content-panel .columns > .large-4 {
+    width: 28%;
+  }
+  .search-form .content-panel .columns > .large-3 {
+    width: 22%;
+  }
+  .search-form .content-panel .columns > .large-2 {
+    width: 11%;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .logo {
     padding-left: 0;
