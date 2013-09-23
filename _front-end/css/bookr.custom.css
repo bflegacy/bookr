@@ -390,6 +390,14 @@ table tr:nth-of-type(even) {
 /* end RESERVATIONS - ORDER CONFIRMATION */
 
 
+/* GUESTS - SEARCH RESULTS */
+#guestsSearchResults li .uppercase {
+  position: relative;
+  top: 0.7rem;
+}
+/* end GUESTS - SEARCH RESULTS */
+
+
 
 @media only screen and (min-width: 768px) {
   .search-form .content-panel .columns > .columns {
