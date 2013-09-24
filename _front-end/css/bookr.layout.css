@@ -40,7 +40,7 @@ article.single {
   left: 0;
   padding: 0;
 }
-.content {
+.content-area {
   position: relative;
   top: 10rem; /*160px*/
 }
@@ -53,7 +53,7 @@ article.single {
     position: static;
     padding-left: 0.9375rem; /*15px*/
   }
-  .content {
+  .content-area {
     width: 80%;
     position: static;
   }
