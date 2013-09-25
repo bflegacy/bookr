@@ -2,35 +2,35 @@
 @-webkit-keyframes beat {
   to { -webkit-transform: scale(1.4); }
 }
-#staticPageList li span {
+#staticPageList .heart {
   margin: 0 1rem 0 0.2rem;
   zoom: 130%;
   position: relative;
   top: 1px;
   display: inline-block;
 }
-#staticPageList li.done span {
+#staticPageList .heart.done {
   color: YellowGreen;
 }
-#staticPageList li.in-progress span {
+#staticPageList .heart.in-progress {
   color: #E6C200;
 }
-#staticPageList li.missing span {
+#staticPageList .heart.missing {
   color: LightCoral;
 }
-#staticPageList a:hover > span {
+#staticPageList :hover > .heart {
   -webkit-animation-name: beat;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   -webkit-transform-origin: center;
 }
-#staticPageList .done > a:hover > span {
+#staticPageList :hover > .heart.done {
   -webkit-animation-duration: 0.2s;
 }
-#staticPageList .in-progress > a:hover > span {
+#staticPageList :hover > .heart.in-progress {
   -webkit-animation-duration: 0.5s;
 }
-#staticPageList .missing > a:hover > span {
+#staticPageList :hover > .heart.missing {
   -webkit-animation-duration: 1s;
 }
 /* end INDEX */
