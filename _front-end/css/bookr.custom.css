@@ -417,6 +417,9 @@ table tr:nth-of-type(even) {
   left: -0.8rem;
   top: 45%;
 }
+.x-axis {
+  padding-left: 3rem;
+}
 /* end OCCUPANCY */
 
 
