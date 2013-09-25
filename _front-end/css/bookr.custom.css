@@ -398,6 +398,28 @@ table tr:nth-of-type(even) {
 /* end GUESTS - SEARCH RESULTS */
 
 
+/* OCCUPANCY */
+#occupancy .content-panel {
+  padding: 1.5rem 2rem 1.5rem 1rem;
+}
+.chart-container {
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.chart-container .y-axis {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+
+  position: absolute;
+  left: -1rem;
+  top: 45%;
+}
+/* end OCCUPANCY */
+
+
 
 @media only screen and (min-width: 768px) {
   .search-form .content-panel .columns > .columns {

@@ -46,11 +46,107 @@
             </li>
           </ul>
         </div>
-        <div class="columns large-10 content-area">
-          <div class="content-panel">
-            <p class="text">Occupancy comes here</p>
+        <form action="" class="custom search-form">
+          <div class="columns large-10 content-area">
+            <div class="content-panel">
+              <div class="row">
+                <div class="columns">
+                  <div class="large-4 columns large-offset-1">
+                    <label class="text uppercase gray twelve" for="propertyDropdown">Property</label>
+                    <select id="propertyDropdown">
+                      <option>New Port Beach</option>
+                      <option>Park City</option>
+                      <option>Salt Lake City</option>
+                      <option>San Francisco</option>
+                      <option>Bontiful</option>
+                    </select>
+                  </div>
+                  <div class="large-3 columns">
+                    <label class="text uppercase gray twelve" for="monthDropdown">Month</label>
+                    <select id="monthDropdown">
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                  </div>
+                  <div class="large-3 columns left">
+                    <label class="text uppercase gray twelve" for="yearDropdown">Year</label>
+                    <select id="yearDropdown">
+                      <option>2013</option>
+                      <option>2014</option>
+                      <option>2015</option>
+                      <option>2016</option>
+                      <option>2017</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row margin-top">
+                <div class="columns chart-container">
+                  <p class="text twelve uppercase gray y-axis">Occupancy (%)</p>
+                  <canvas class="right"></canvas>
+                </div>
+              </div>
+              <div class="row margin-top-less">
+                <p class="text twelve uppercase centered gray">January 2013</p>
+              </div>
+              <div class="row margin-top-double">
+                <div class="columns large-offset-1 large-11">
+                  <p class="text">Recent bookings</p>
+                </div>
+              </div>
+              <div class="row margin-top">
+                <div class="columns large-offset-1 large-11">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th width="200" class="text fourteen">Name</th>
+                        <th width="200" class="text fourteen">Confirmation #</th>
+                        <th width="300" class="text fourteen">Email</th>
+                        <th width="100" class="text fourteen">Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text fourteen gray">Kenji Bankhead</td>
+                        <td class="text fourteen gray">187341928374</td>
+                        <td class="text fourteen gray">name@email.com</td>
+                        <td class="text fourteen gray">07/12/2013</td>
+                      </tr>
+                      <tr>
+                        <td class="text fourteen gray">Kenji Bankhead</td>
+                        <td class="text fourteen gray">187341928374</td>
+                        <td class="text fourteen gray">name@email.com</td>
+                        <td class="text fourteen gray">07/12/2013</td>
+                      </tr>
+                      <tr>
+                        <td class="text fourteen gray">Kenji Bankhead</td>
+                        <td class="text fourteen gray">187341928374</td>
+                        <td class="text fourteen gray">name@email.com</td>
+                        <td class="text fourteen gray">07/12/2013</td>
+                      </tr>
+                      <tr>
+                        <td class="text fourteen gray">Kenji Bankhead</td>
+                        <td class="text fourteen gray">187341928374</td>
+                        <td class="text fourteen gray">name@email.com</td>
+                        <td class="text fourteen gray">07/12/2013</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </article>
 
@@ -77,7 +173,7 @@
     <!-- <script src="js/foundation/foundation.clearing.js"></script> -->
     <!-- <script src="js/foundation/foundation.cookie.js"></script> -->
     <!-- <script src="js/foundation/foundation.dropdown.js"></script> -->
-    <!-- <script src="js/foundation/foundation.forms.js"></script> -->
+    <script src="js/foundation/foundation.forms.js"></script>
     <!-- <script src="js/foundation/foundation.joyride.js"></script> -->
     <!-- <script src="js/foundation/foundation.magellan.js"></script> -->
     <!-- <script src="js/foundation/foundation.orbit.js"></script> -->
@@ -89,8 +185,62 @@
     <!-- <script src="js/foundation/foundation.placeholder.js"></script> -->
     <!-- <script src="js/foundation/foundation.abide.js"></script> -->
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+
     <script>
       $(document).foundation();
+
+      $(document)
+        .ready( function () {
+          var $chartContainer = $('.chart-container'),
+              $chart = $chartContainer.find('canvas'),
+              ctx = $chart.get(0).getContext('2d'),
+              options = {
+                //Boolean - If we show the scale above the chart data
+                scaleOverlay: true,
+                //Boolean - If we want to override with a hard coded scale
+                scaleOverride: true,
+                //** Required if scaleOverride is true **
+                //Number - The number of steps in a hard coded scale
+                scaleSteps: 4,
+                //Number - The value jump in the hard coded scale
+                scaleStepWidth: 25,
+                //Number - The scale starting value
+                scaleStartValue: 0,
+                //String - Colour of the scale line
+                scaleLineColor: 'rgba(0, 0, 0, 0.3)',
+                //String - Scale label font declaration for the scale label
+                scaleFontFamily: 'Montserrat',
+                //String - Scale label font colour
+                scaleFontColor: '#808080',
+                ///Boolean - Whether grid lines are shown across the chart
+                scaleShowGridLines: true,
+                //String - Colour of the grid lines
+                scaleGridLineColor: 'rgba(0, 0, 0, 0.06)',
+                //Boolean - Whether to show a dot for each point
+                pointDot: false,
+                //Number - Number of animation steps
+                animationSteps: 75,
+                //String - Animation easing effect
+                animationEasing: "easeInOutQuart"
+              },
+              data = {
+                labels: [ '1', '', '', '', '5', '', '', '', '10', '', '', '', '15', '', '', '', '20', '', '', '', '25', '', '', '', '30' ],
+                datasets: [
+                  {
+                    fillColor: 'rgba(63, 169, 245, 0.1)',
+                    strokeColor: 'rgba(63, 169, 245, 1)',
+                    data: [ 50, 57, 43, 30, 29, 66, 70, 86, 62, 55, 42, 43, 19, 26, 35, 77, 80, 89, 95, 80, 69, 72, 75, 88, 74, 72, 53, 45, 65, 60, 62 ]
+                  }
+                ]
+              };
+
+          $chart.attr( 'width', $chartContainer.width() - 70 );
+          $chart.attr( 'height', ( $chartContainer.width() - 70 ) / 2 );
+
+          new Chart(ctx).Line(data, options);
+        });
     </script>
+
   </body>
 </html>
