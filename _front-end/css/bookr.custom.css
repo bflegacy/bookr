@@ -278,11 +278,11 @@
   width: 100%;
 }
 .list-panel th {
-  padding: 0.7rem 1rem;
+  padding: 0.75rem 1rem;
   background: #EFEFEF;
 }
 .list-panel td {
-  padding: 0.8rem 0.4rem;
+  padding: 0.7rem 0.2rem;
 }
 .list-panel td:first-child {
   padding-left: 1rem;
@@ -302,6 +302,10 @@
   margin: 0;
   padding: 0.2rem 0.5rem;
   border-radius: 0;
+  font-size: 0.75rem; /*12px*/
+}
+.list-panel .remove-list-item {
+  line-height: 1;
 }
 .list-panel .add-list-item-row > td {
   padding: 0;
