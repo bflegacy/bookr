@@ -272,6 +272,52 @@
 /* end PROPERTIES INDEX */
 
 
+/* CREATE ROOM TYPE */
+.list-panel {
+  border: 1px solid #CCCCCC;
+  width: 100%;
+}
+.list-panel th {
+  padding: 0.7rem 1rem;
+  background: #EFEFEF;
+}
+.list-panel td {
+  padding: 0.8rem 0.4rem;
+}
+.list-panel td:first-child {
+  padding-left: 1rem;
+}
+.list-panel td:last-child {
+  padding-right: 1rem;
+}
+.list-panel a {
+  color: #275F82;
+  display: block;
+}
+.list-panel a:hover,
+.list-panel a:focus {
+  color: #3333333;
+}
+.list-panel input {
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0;
+}
+.list-panel .add-list-item-row > td {
+  padding: 0;
+}
+.list-panel .add-list-item {
+  border-top: 2px dashed #CCCCCC;
+  background: rgba(63, 169, 245, 0.1);
+  padding: 0.8rem 0;
+}
+.list-panel .add-list-item:hover,
+.list-panel .add-list-item:focus {
+  background: rgba(63, 169, 245, 0.15);
+}
+/* end CREATE ROOM TYPE */
+
+
 /* PROPERTY DETAILS */
 .orbit-container img {
   width: 100%;
@@ -358,12 +404,12 @@
   margin: 1.25em 0 1.1875em;
   height: 0;
 }
-table {
+.content-panel table {
   border: none;
 }
-table tr.even,
-table tr.alt,
-table tr:nth-of-type(even) {
+.content-panel table tr.even,
+.content-panel table tr.alt,
+.content-panel table tr:nth-of-type(even) {
   background: white;
 }
 /* end RESERVATIONS - NEW ORDER */
