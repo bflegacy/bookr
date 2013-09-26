@@ -218,6 +218,9 @@
 .bookr .accordion input[type="checkbox"] {
   display: none;
 }
+.bookr .accordion .title {
+  -webkit-transition: all 150ms ease-in;
+}
 .bookr .accordion label {
   font-family: 'Montserrat', sans-serif;
   color: #808080;
@@ -315,6 +318,7 @@
 .list-panel .add-list-item:hover,
 .list-panel .add-list-item:focus {
   background: rgba(63, 169, 245, 0.15);
+  -webkit-transition: all 150ms ease-in;
 }
 /* end CREATE ROOM TYPE */
 
