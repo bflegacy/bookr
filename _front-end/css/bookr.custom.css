@@ -304,9 +304,6 @@
   border-radius: 0;
   font-size: 0.75rem; /*12px*/
 }
-.list-panel .remove-list-item {
-  line-height: 1;
-}
 .list-panel .add-list-item-row > td {
   padding: 0;
 }
