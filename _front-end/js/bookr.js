@@ -65,18 +65,35 @@ BRIGHTFACE.bookr = BRIGHTFACE.bookr || ( function () {
           $('.x-axis').html( month + ' ' + year );
           getChartData(property, month, year);
         }
+      },
+      addLine = function (event) {
+        var $addLink = $(this),
+            $list = $addLink.closest('.list-panel').find('tbody'),
+            $newRow = $list.find('.list-item').eq(0).clone().removeClass('hide');
+
+        $addLink.closest('tr').before($newRow);
+        $newRow.find('.remove-list-item').on( 'click', removeLine );
+        event.preventDefault();
+      },
+      removeLine = function (event) {
+        $(this).closest('.list-item').remove();
+        event.preventDefault();
       };
 
   return {
-    'updateChart': updateChart
+    'updateChart': updateChart,
+    'addLine': addLine
   };
 }());
 
 
 $(document).ready( function () {
   if ( $('.chart-container').length ) {
+    $('#propertyDropdown, #monthDropdown, #yearDropdown').on( 'change', BRIGHTFACE.bookr.updateChart );
     BRIGHTFACE.bookr.updateChart();
+  }
+  if ( $('.list-panel').length ) {
+    $('.add-list-item').on( 'click', BRIGHTFACE.bookr.addLine );
   }
 });
 
-$('#propertyDropdown, #monthDropdown, #yearDropdown').on( 'change', BRIGHTFACE.bookr.updateChart );
