@@ -449,6 +449,31 @@
 /* end GUESTS - SEARCH RESULTS */
 
 
+/* GUESTS - CHECK IN */
+.bookr .room-button {
+  background: #F5F5F5;
+  border: 1px solid #3FA9F5;
+  color: #3FA9F5;
+  min-width: 0;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.bookr .room-button:hover,
+.bookr .room-button:focus,
+.bookr .room-button.active {
+  background: rgba(63, 169, 245, 0.2);
+  color: #275F82;
+}
+.bookr .reveal-modal {
+  background: #F5F5F5;
+  padding: 3rem 5rem;
+  width: 28rem; /*448px*/
+  margin-left: -14rem;
+}
+/* end GUESTS - CHECK IN */
+
+
 /* OCCUPANCY */
 #occupancy .content-panel {
   padding: 1.5rem 2rem 1.5rem 1rem;
@@ -488,6 +513,9 @@
   }
   .search-form .content-panel .columns > .large-2 {
     width: 11%;
+  }
+  .bookr .reveal-modal {
+    top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {

@@ -78,11 +78,21 @@ BRIGHTFACE.bookr = BRIGHTFACE.bookr || ( function () {
       removeLine = function (event) {
         $(this).closest('.list-item').remove();
         event.preventDefault();
+      },
+      selectRoom = function () {
+        var $roomButton = $(this),
+            $otherRoomButtons;
+
+        if ( !$roomButton.hasClass('active') ) {
+          $roomButton.closest('.room-buttons').find('.room-button').not($roomButton).removeClass('active');
+          $roomButton.addClass('active');
+        }
       };
 
   return {
     'updateChart': updateChart,
-    'addLine': addLine
+    'addLine': addLine,
+    'selectRoom': selectRoom
   };
 }());
 
@@ -94,6 +104,9 @@ $(document).ready( function () {
   }
   if ( $('.list-panel').length ) {
     $('.add-list-item').on( 'click', BRIGHTFACE.bookr.addLine );
+  }
+  if ( $('.room-buttons').length ) {
+    $('.room-button').on( 'click', BRIGHTFACE.bookr.selectRoom );
   }
 });
 
