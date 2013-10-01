@@ -50,8 +50,9 @@
           <div class="content-panel">
             <div class="row">
               <div class="columns">
-                <p class="text left">Guest Information</p>
-                <p class="text right gray uppercase"><span class="text blue">Status:</span> Checked In, #777</p>
+                <span class="text left">Guest Information</span>
+                <span class="room-button button active right tip-right" data-tooltip data-reveal-id="roomModal" title="Change room">#777</span>
+                <span class="text right gray">Checked In</span>
               </div>
             </div>
             <table class="margin-top">
@@ -187,6 +188,34 @@
       </div>
     </article>
 
+    <!-- SELECT ROOM POPUP -->
+    <div id="roomModal" class="reveal-modal small">
+      <a class="close-reveal-modal">&#215;</a>
+      <div class="row margin-top">
+        <div class="columns">
+          <p class="text">Assign Room</p>
+        </div>
+      </div>
+      <div class="row margin-top-double room-buttons">
+        <div class="columns large-6">
+          <div class="room-button button">#777</div>
+          <div class="room-button button">#999</div>
+          <div class="room-button button">#333</div>
+        </div>
+        <div class="columns large-6">
+          <div class="room-button button">#778</div>
+          <div class="room-button button">#555</div>
+          <div class="room-button button">#222</div>
+        </div>
+      </div>
+      <div class="row margin-top-less">
+        <div class="columns">
+          <a href="guests_check_out.html" class="button right">Save</a>
+        </div>
+      </div>
+    </div>
+    <!-- end SELECT ROOM POPUP -->
+
 
     <!--[if lt IE 9]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -214,16 +243,23 @@
     <!-- <script src="js/foundation/foundation.joyride.js"></script> -->
     <!-- <script src="js/foundation/foundation.magellan.js"></script> -->
     <!-- <script src="js/foundation/foundation.orbit.js"></script> -->
-    <!-- <script src="js/foundation/foundation.reveal.js"></script> -->
+    <script src="js/foundation/foundation.reveal.js"></script>
     <!-- <script src="js/foundation/foundation.section.js"></script> -->
-    <!-- <script src="js/foundation/foundation.tooltips.js"></script> -->
+    <script src="js/foundation/foundation.tooltips.js"></script>
     <!-- <script src="js/foundation/foundation.topbar.js"></script> -->
     <!-- <script src="js/foundation/foundation.interchange.js"></script> -->
     <!-- <script src="js/foundation/foundation.placeholder.js"></script> -->
     <!-- <script src="js/foundation/foundation.abide.js"></script> -->
 
     <script>
-      $(document).foundation();
+      $(document)
+        .foundation('tooltips')
+        .foundation( 'reveal', {
+          'animation': 'fade'
+        });
     </script>
+
+    <script src="js/bookr.js"></script>
+
   </body>
 </html>

@@ -451,13 +451,14 @@
 
 /* GUESTS - CHECK IN */
 .bookr .room-button {
-  background: #F5F5F5;
+  background: transparent;
   border: 1px solid #3FA9F5;
   color: #3FA9F5;
   min-width: 0;
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  max-width: 7rem;
 }
 .bookr .room-button:hover,
 .bookr .room-button:focus,
@@ -472,6 +473,16 @@
   margin-left: -14rem;
 }
 /* end GUESTS - CHECK IN */
+
+
+/* GUESTS - CHECK OUT */
+#guestsCheckOut .room-button {
+  margin-left: 1rem;
+  position: relative;
+  top: -0.2rem;
+  margin-bottom: 0;
+}
+/* end GUESTS - CHECK OUT */
 
 
 /* OCCUPANCY */
